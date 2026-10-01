@@ -23,7 +23,7 @@ while True:
        print(f'\n"{option}" IS NOT A REAL OPTION VALUE. PLEASE TRY AGAIN.\n')
        continue
 
-if option = 1:
+if option == 1:
    while True:
        print("\n1. Add Record.")
        item_name = input("Enter Name: ")
@@ -58,7 +58,7 @@ if option = 1:
        print("Error: File does not exist.")
 
 
-if option = 2:
+if option == 2:
    print("\n2. View All Records And Statistics")
    try:
        with open(filename, "r") as f:
@@ -72,7 +72,7 @@ if option = 2:
 
 
    except FileNotFoundError:
-       print("Sale record saved successfully")
+       print("Sale Record Is Saved Successfully")
 
 
 if option == 3:
@@ -81,6 +81,6 @@ if option == 3:
 
 
 if option == 4:
-   print("Thank you for using the Sales Record Management System.")
+   print("Thanks For Using the Sales Record Management System!.")
    exit()
 
